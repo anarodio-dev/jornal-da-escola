@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
     color: rgb(255, 255, 255);
@@ -22,3 +23,20 @@ body{
     width: 50%;
     
 }
+container-pai {
+    position: relative; /* Define o ponto de referência para o filho */
+    width: 100%;
+    height: 400px;
+    background-image: url('seu-fundo.jpg'); /* A imagem de fundo */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .imagem-topo {
+    position: absolute; /* Tira a imagem do fluxo normal */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste fino de centralização */
+    z-index: 10; /* Garante que ela fique na frente do fundo */
+    width: 200px; /* Defina o tamanho da sua imagem */
+  }
